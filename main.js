@@ -15,3 +15,9 @@ function ComputerPlay() {
             return "Error - Incorrect number generated";
     }
 }
+
+// Function: Gets Players Choice
+function UserPlay() {
+    let choice = prompt("Please enter either Rock, Paper or Scissors");
+    return choice.toLocaleLowerCase();
+}
