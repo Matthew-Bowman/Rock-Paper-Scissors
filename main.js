@@ -16,6 +16,12 @@ function ComputerPlay() {
     }
 }
 
+function UserPlay() {
+    // Get and return the users decision
+    let choice = prompt("Please enter either Rock, Paper or Scissors.").toLocaleLowerCase();
+    return choice;
+}
+
 // Function: Takes Both Selections and Declares a Winner
 function PlayRound(userSelection, computerSelection) {
     // Make both selections lowercase
