@@ -95,14 +95,19 @@ class Game {
 
     // Method: Plays a round
     Play = function (pUserSelection) {
-        // Increment Counter
-        this.roundCounter++;
-        // Play the round and work out winner
-        let results = PlayRound(pUserSelection);
-        this.OutputResults(results);
-        this.AddScore(results.winner);
-        // Return the winner
-        return results.winner;
+        // Dont play a round if someone wins
+        if (!(this.userScore >= 5 || this.computerScore >= 5)) {
+            // Increment Counter
+            this.roundCounter++;
+            // Play the round and work out winner
+            let results = PlayRound(pUserSelection);
+            this.OutputResults(results);
+            this.AddScore(results.winner);
+            // Return the winner
+            return results.winner;
+        } else {
+            return false;
+        }
     }
 
     // Method: Increments the winners score when a round is played
@@ -133,12 +138,12 @@ class Game {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-// Initialisation
+    // Initialisation
     const game = new Game();
     const options = document.querySelectorAll(".option");
     const winner = document.querySelector(".results .winner .description")
 
-// Event Listeners
+    // Event Listeners
     // Event Listener: Checks for one of the three buttons being clicked
     //                 and plays a game if true & updates score
     options.forEach(option => {
@@ -146,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
             game.Play(option.id);
             UpdateScore(game);
 
-            if(game.userScore === 5)
+            if (game.userScore === 5)
                 winner.textContent = "You have won the game!";
             else if (game.computerScore === 5)
                 winner.textContent = "Computer has won the game!";
