@@ -93,6 +93,7 @@ class Game {
         this.roundCounter++;
         // Play the round and work out winner
         let results = PlayRound(pUserSelection);
+        this.OutputResults(results);
         this.AddScore(results.winner);
         // Return the winner
         return results.winner;
@@ -112,7 +113,15 @@ class Game {
     }
 
     // Method: Outputs the results in a formatted way
-    OutputResults = function () {
-
+    OutputResults = function (pResults) {
+        // Variable Initialisation
+        let results = pResults;
+        // Output Results
+        console.log(`---------------------------`);
+        console.log(`Round: ${this.roundCounter}`)
+        console.log(`--------`)
+        console.log(`User's Choice: ${results.user}`);
+        console.log(`Computer's Choice: ${results.computer}`);
+        console.log(`Winner: ${results.winner}`);
     }
 }
