@@ -135,7 +135,5 @@ class Game {
 document.addEventListener("DOMContentLoaded", () => {
     // Initialisation
     const game = new Game();
-    const rock = document.querySelector("#rock");
-    const paper = document.querySelector("#paper");
-    const scissors = document.querySelector("#scissors");
+    const options = document.querySelectorAll(".option");
 })
