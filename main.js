@@ -48,8 +48,10 @@ function PlayRound(pUserSelection) {
         switch (computerSelection) {
             case "paper":
                 results.winner = "Computer";
+                break;
             case "scissors":
                 results.winner = "User";
+                break;
         }
     }
     // User Chose Paper
@@ -57,8 +59,10 @@ function PlayRound(pUserSelection) {
         switch (computerSelection) {
             case "rock":
                 results.winner = "User";
+                break;
             case "scissors":
                 results.winner = "Computer";
+                break;
         }
     }
     // User Chose Scissors
@@ -66,8 +70,10 @@ function PlayRound(pUserSelection) {
         switch (computerSelection) {
             case "rock":
                 results.winner = "Computer";
+                break;
             case "paper":
                 results.winner = "User";
+                break;
         }
 
     }
