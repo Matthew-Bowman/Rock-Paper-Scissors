@@ -133,14 +133,29 @@ class Game {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Initialisation
+// Initialisation
     const game = new Game();
     const options = document.querySelectorAll(".option");
 
-    // Event Listeners
+// Event Listeners
+    // Event Listener: Checks for one of the three buttons being clicked
+    //                 and plays a game if true & updates score
     options.forEach(option => {
         option.addEventListener("click", () => {
             game.Play(option.id);
+            UpdateScore(game);
         })
     })
 })
+
+// Function: Updates the score display
+function UpdateScore(pGame) {
+    // Initialisation
+    let game = pGame;
+    let userScoreDisplay = document.querySelector(".results .user .score");
+    let computerScoreDisplay = document.querySelector(".results .computer .score");
+
+    // Write Scores
+    userScoreDisplay.textContent = game.userScore;
+    computerScoreDisplay.textContent = game.computerScore;
+}
