@@ -1,3 +1,6 @@
+// Initialisation
+const winningScore = 5;
+
 // Function: Generates Either Rock/Paper/Scissors Randomly
 function ComputerPlay() {
     // Generate Random Number
@@ -96,7 +99,7 @@ class Game {
     // Method: Plays a round
     Play = function (pUserSelection) {
         // Dont play a round if someone wins
-        if (!(this.userScore >= 5 || this.computerScore >= 5)) {
+        if (!(this.userScore >= winningScore || this.computerScore >= winningScore)) {
             // Increment Counter
             this.roundCounter++;
             // Play the round and work out winner
@@ -151,9 +154,9 @@ document.addEventListener("DOMContentLoaded", () => {
             game.Play(option.id);
             UpdateScore(game);
 
-            if (game.userScore === 5)
+            if (game.userScore === winningScore)
                 winner.textContent = "You have won the game!";
-            else if (game.computerScore === 5)
+            else if (game.computerScore === winningScore)
                 winner.textContent = "Computer has won the game!";
         })
     })
