@@ -26,8 +26,8 @@ function UserPlay() {
 function PlayRound() {
 
     // Get Choices
-    let userChoice = UserPlay();
-    let computerChoice = ComputerPlay();
+    let userSelection = UserPlay();
+    let computerSelection = ComputerPlay();
 
     // Make both selections lowercase
     userSelection = userSelection.toLocaleLowerCase();
