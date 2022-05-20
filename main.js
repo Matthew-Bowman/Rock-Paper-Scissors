@@ -23,9 +23,9 @@ function UserPlay() {
 }
 
 // Function: Takes Both Selections and Declares a Winner
-function PlayRound() {
+function PlayRound(pUserSelection) {
     // Get Choices
-    let userSelection = UserPlay();
+    let userSelection = pUserSelection;
     let computerSelection = ComputerPlay();
 
     // Make both selections lowercase
@@ -69,22 +69,26 @@ function PlayRound() {
 // Class: Creates a game for the user to play with a computer
 //        Usually instantiated when the page is loaded.
 class Game {
+    // Constructor: Called when class instantiated
     constructor() {
+        // Variable initialisation
         this.userScore = 0;
         this.computerScore = 0;
         this.roundCounter = 0;
     }
 
-    Play = function () {
+    // Method: Plays a round
+    Play = function (pUserSelection) {
         // Increment Counter
         this.roundCounter++;
         // Play the round and work out winner
-        let winner = PlayRound();
+        let winner = PlayRound(pUserSelection);
         this.AddScore(winner);
         // Return the winner
         return winner;
     }
 
+    // Method: Increments the winners score when a round is played
     AddScore = function (pWinner) {
         // Add Score
         switch (pWinner) {
@@ -95,5 +99,10 @@ class Game {
                 this.userScore++;
                 break;
         }
+    }
+
+    // Method: Outputs the results in a formatted way
+    OutputResults = function () {
+        
     }
 }
