@@ -24,15 +24,15 @@ function UserPlay() {
 
 // Function: Takes Both Selections and Declares a Winner
 function PlayRound() {
-// Get Choices
+    // Get Choices
     let userSelection = UserPlay();
     let computerSelection = ComputerPlay();
 
-// Make both selections lowercase
+    // Make both selections lowercase
     userSelection = userSelection.toLocaleLowerCase();
     computerSelection = computerSelection.toLocaleLowerCase();
 
-// Decide the winner
+    // Decide the winner
     // Check for a Draw
     if (userSelection === computerSelection)
         return "Draw";
@@ -44,7 +44,7 @@ function PlayRound() {
             case "scissors":
                 return "User";
         }
-    } 
+    }
     // User Chose Paper
     else if (userSelection === "paper") {
         switch (computerSelection) {
@@ -53,7 +53,7 @@ function PlayRound() {
             case "scissors":
                 return "Computer";
         }
-    } 
+    }
     // User Chose Scissors
     else if (userSelection === "scissors") {
         switch (computerSelection) {
@@ -66,41 +66,34 @@ function PlayRound() {
     }
 }
 
-// Function: Calls PlayRound Function and Counts Scores
-// Returns Array Format: Winner | User's Score | Computer's Score
-function Game() {
-// Initialise Variables
-    let userScore = 0; // Will hold the score of the user
-    let computerScore = 0; // Will hold the score of the computer
-
-/* Play the Game */
-
-    // Play Round
-    let winner = PlayRound();
-
-    // Output Results
-    console.log(`---------------------------`);
-    console.log(`Round: ${i}`)
-    console.log(`--------`)
-    console.log(`User's Choice: ${userChoice}`);
-    console.log(`Computer's Choice: ${computerChoice}`);
-    console.log(`Winner: ${winner}`);
-
-    // Add Score
-    switch (winner) {
-        case "Computer":
-            computerScore++;
-            break;
-        case "User": 
-            userScore++;
-            break;
+// Class: Creates a game for the user to play with a computer
+//        Usually instantiated when the page is loaded.
+class Game {
+    constructor() {
+        this.userScore = 0;
+        this.computerScore = 0;
+        this.roundCounter = 0;
     }
 
-// Declare the Overall Winner
-    if(userScore == computerScore)
-        return ["Draw", userScore, computerScore];
-    else if (userScore > computerScore)
-        return ["User", userScore, computerScore];
-    else if (computerScore > userScore)
-        return ["Computer", userScore, computerScore];
+    Play = function () {
+        // Increment Counter
+        this.roundCounter++;
+        // Play the round and work out winner
+        let winner = PlayRound();
+        this.AddScore(winner);
+        // Return the winner
+        return winner;
+    }
+
+    AddScore = function (pWinner) {
+        // Add Score
+        switch (pWinner) {
+            case "Computer":
+                this.computerScore++;
+                break;
+            case "User":
+                this.userScore++;
+                break;
+        }
+    }
 }
