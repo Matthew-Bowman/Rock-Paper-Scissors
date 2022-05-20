@@ -23,7 +23,12 @@ function UserPlay() {
 }
 
 // Function: Takes Both Selections and Declares a Winner
-function PlayRound(userSelection, computerSelection) {
+function PlayRound() {
+
+    // Get Choices
+    let userChoice = UserPlay();
+    let computerChoice = ComputerPlay();
+
     // Make both selections lowercase
     userSelection = userSelection.toLocaleLowerCase();
     computerSelection = computerSelection.toLocaleLowerCase();
@@ -70,12 +75,9 @@ function Game() {
     let computerScore = 0; // Will hold the score of the computer
 
 /* Play the Game */
-    // Get Choices
-    let userChoice = UserPlay();
-    let computerChoice = ComputerPlay();
 
     // Play Round
-    let winner = PlayRound(userChoice, computerChoice);
+    let winner = PlayRound();
 
     // Output Results
     console.log(`---------------------------`);
