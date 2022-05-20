@@ -24,16 +24,15 @@ function UserPlay() {
 
 // Function: Takes Both Selections and Declares a Winner
 function PlayRound() {
-
-    // Get Choices
+// Get Choices
     let userSelection = UserPlay();
     let computerSelection = ComputerPlay();
 
-    // Make both selections lowercase
+// Make both selections lowercase
     userSelection = userSelection.toLocaleLowerCase();
     computerSelection = computerSelection.toLocaleLowerCase();
 
-    // Decide the winner
+// Decide the winner
     // Check for a Draw
     if (userSelection === computerSelection)
         return "Draw";
