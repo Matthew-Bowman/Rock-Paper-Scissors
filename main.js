@@ -136,4 +136,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initialisation
     const game = new Game();
     const options = document.querySelectorAll(".option");
+
+    // Event Listeners
+    options.forEach(option => {
+        option.addEventListener("click", () => {
+            game.Play(option.id);
+        })
+    })
 })
