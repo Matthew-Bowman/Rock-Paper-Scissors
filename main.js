@@ -32,38 +32,48 @@ function PlayRound(pUserSelection) {
     userSelection = userSelection.toLocaleLowerCase();
     computerSelection = computerSelection.toLocaleLowerCase();
 
+    // Other Variable Initialisation
+    let results = {
+        winner: null,
+        user: userSelection,
+        computer: computerSelection,
+    }
+
     // Decide the winner
     // Check for a Draw
     if (userSelection === computerSelection)
-        return "Draw";
+        results.winner = "Draw";
     // User Chose Rock
     else if (userSelection === "rock") {
         switch (computerSelection) {
             case "paper":
-                return "Computer";
+                results.winner = "Computer";
             case "scissors":
-                return "User";
+                results.winner = "User";
         }
     }
     // User Chose Paper
     else if (userSelection === "paper") {
         switch (computerSelection) {
             case "rock":
-                return "User";
+                results.winner = "User";
             case "scissors":
-                return "Computer";
+                results.winner = "Computer";
         }
     }
     // User Chose Scissors
     else if (userSelection === "scissors") {
         switch (computerSelection) {
             case "rock":
-                return "Computer";
+                results.winner = "Computer";
             case "paper":
-                return "User";
+                results.winner = "User";
         }
 
     }
+
+    // Return Round Results
+    return results;
 }
 
 // Class: Creates a game for the user to play with a computer
@@ -82,10 +92,10 @@ class Game {
         // Increment Counter
         this.roundCounter++;
         // Play the round and work out winner
-        let winner = PlayRound(pUserSelection);
-        this.AddScore(winner);
+        let results = PlayRound(pUserSelection);
+        this.AddScore(results.winner);
         // Return the winner
-        return winner;
+        return results.winner;
     }
 
     // Method: Increments the winners score when a round is played
@@ -103,6 +113,6 @@ class Game {
 
     // Method: Outputs the results in a formatted way
     OutputResults = function () {
-        
+
     }
 }
