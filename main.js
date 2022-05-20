@@ -136,6 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Initialisation
     const game = new Game();
     const options = document.querySelectorAll(".option");
+    const winner = document.querySelector(".results .winner .description")
 
 // Event Listeners
     // Event Listener: Checks for one of the three buttons being clicked
@@ -144,6 +145,11 @@ document.addEventListener("DOMContentLoaded", () => {
         option.addEventListener("click", () => {
             game.Play(option.id);
             UpdateScore(game);
+
+            if(game.userScore === 5)
+                winner.textContent = "You have won the game!";
+            else if (game.computerScore === 5)
+                winner.textContent = "Computer has won the game!";
         })
     })
 })
