@@ -66,7 +66,6 @@ function PlayRound(userSelection, computerSelection) {
 // Returns Array Format: Winner | User's Score | Computer's Score
 function Game() {
 // Initialise Variables
-    let rounds = 5; // Holds the amount of rounds to play
     let userScore = 0; // Will hold the score of the user
     let computerScore = 0; // Will hold the score of the computer
 
