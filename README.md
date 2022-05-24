@@ -1,2 +1,2 @@
-# odin-rps
+# Rock Paper Scissors
 A rock paper scissors game.
