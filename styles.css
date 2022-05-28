@@ -44,5 +44,10 @@ body {
 }
 
 .option:hover {
+    /* Cursor */
     cursor: pointer;
+
+    /* Appearance */
+    filter: brightness(110%);
+    transform: scale(105%);
 }
