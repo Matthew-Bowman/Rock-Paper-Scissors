@@ -73,6 +73,9 @@ body {
     /* Apearance */
     border: 2px solid #F7FFF7;
     border-radius: 6px;
+
+    /* Potisioning */
+    padding: 16px;
 }
 
 .scorecard .name,
