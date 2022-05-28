@@ -64,3 +64,8 @@ body {
     gap: 16px;
     width: 416px;
 }
+
+.scorecard {
+    /* Flexbox */
+    flex: 1 1 0px;
+}
