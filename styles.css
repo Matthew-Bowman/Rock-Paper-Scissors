@@ -16,6 +16,11 @@ body {
     font-size: 40px;
 }
 
+.option-container {
+    /* Flexbox */
+    display: flex;
+}
+
 .option {
     /* Appearance */
     border: 1px solid #F7FFF7;
