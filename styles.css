@@ -74,3 +74,8 @@ body {
     border: 2px solid #F7FFF7;
     border-radius: 6px;
 }
+
+.scorecard .name,
+.scorecard .score {
+    margin: 0;
+}
