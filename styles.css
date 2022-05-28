@@ -27,7 +27,7 @@ body {
 
 .option {
     /* Appearance */
-    border: 1px solid #F7FFF7;
+    border: 3px solid #F7FFF7;
     border-radius: 12px;
     background-color: #343434;
     color: #F7FFF7;
