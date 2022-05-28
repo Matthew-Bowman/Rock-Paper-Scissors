@@ -42,3 +42,7 @@ body {
     aspect-ratio: 1;
     font-size: 64px;
 }
+
+.option:hover {
+    cursor: pointer;
+}
