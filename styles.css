@@ -77,5 +77,6 @@ body {
 
 .scorecard .name,
 .scorecard .score {
+    /* Positioning */
     margin: 0;
 }
