@@ -68,4 +68,7 @@ body {
 .scorecard {
     /* Flexbox */
     flex: 1 1 0px;
+
+    /* Apearance */
+    border: 2px solid #F7FFF7;
 }
