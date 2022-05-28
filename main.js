@@ -166,8 +166,8 @@ document.addEventListener("DOMContentLoaded", () => {
 function UpdateScore(pGame) {
     // Initialisation
     let game = pGame;
-    let userScoreDisplay = document.querySelector(".results .user .score");
-    let computerScoreDisplay = document.querySelector(".results .computer .score");
+    let userScoreDisplay = document.querySelector(".score-container .user .score");
+    let computerScoreDisplay = document.querySelector(".score-container .computer .score");
 
     // Write Scores
     userScoreDisplay.textContent = game.userScore;
