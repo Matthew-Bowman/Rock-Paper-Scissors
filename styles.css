@@ -54,3 +54,9 @@ body {
     filter: brightness(105%);
     transform: scale(102.5%);
 }
+
+.score-container {
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+}
