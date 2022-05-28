@@ -51,6 +51,6 @@ body {
     cursor: pointer;
 
     /* Appearance */
-    filter: brightness(110%);
+    filter: brightness(105%);
     transform: scale(105%);
 }
