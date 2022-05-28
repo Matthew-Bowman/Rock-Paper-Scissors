@@ -83,3 +83,9 @@ body {
     /* Positioning */
     margin: 0;
 }
+
+.scorecard .score {
+    /* Typography */
+    font-size: 20px;
+    font-weight: bold;
+}
