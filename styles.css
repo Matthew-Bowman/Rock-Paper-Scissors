@@ -11,6 +11,7 @@ body {
 }
 
 .heading {
+    /* Positioning */
     margin-top: 64px;
     font-size: 40px;
 }
