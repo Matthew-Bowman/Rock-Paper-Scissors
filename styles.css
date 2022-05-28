@@ -33,4 +33,7 @@ body {
 
     /* Flexbox */
     flex-grow: 1;
+
+    /* Positioning */
+    aspect-ratio: 1;
 }
