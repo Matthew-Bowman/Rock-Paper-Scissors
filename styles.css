@@ -88,4 +88,7 @@ body {
     /* Typography */
     font-size: 20px;
     font-weight: bold;
+
+    /* Positioning */
+    margin-top: 8px;
 }
