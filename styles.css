@@ -59,4 +59,7 @@ body {
     /* Flexbox */
     display: flex;
     flex-direction: row;
+
+    /* Positioning */
+    gap: 16px;
 }
