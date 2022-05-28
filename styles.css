@@ -41,6 +41,9 @@ body {
     /* Positioning */
     aspect-ratio: 1;
     font-size: 64px;
+
+    /* Animation */
+    transition: all 100ms linear;
 }
 
 .option:hover {
