@@ -32,7 +32,7 @@ body {
     color: #F7FFF7;
 
     /* Flexbox */
-    flex-grow: 1;
+    flex: 1 1 0px;
 
     /* Positioning */
     aspect-ratio: 1;
