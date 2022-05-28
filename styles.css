@@ -61,7 +61,7 @@ body {
     flex-direction: row;
 
     /* Positioning */
-    gap: 16px;
+    gap: 8px;
     width: 416px;
     margin-bottom: 16px;
 }
