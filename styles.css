@@ -105,6 +105,7 @@ body {
 
     /* Positioning */
     margin-top: 16px;
+    box-sizing: border-box;
 
     /* Dimensions */
     width: 416px;
