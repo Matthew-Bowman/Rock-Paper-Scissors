@@ -138,6 +138,21 @@ class Game {
         console.log(`User's Choice: ${results.user}`);
         console.log(`Computer's Choice: ${results.computer}`);
         console.log(`Winner: ${results.winner}`);
+
+        // Write round results to message container
+        let message = `` // Empty string
+        switch(results.winner) { // Set string conditionally
+            case "User":
+                message = "You have won this round";
+                break;
+            case "Computer":
+                message = "The computer has won this time";
+                break;
+            case "Draw":
+                message = "This round was a draw";
+                break;
+        }
+        description.textContent = message // Set description to set string
     }
 }
 
