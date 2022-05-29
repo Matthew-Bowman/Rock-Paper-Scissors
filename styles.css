@@ -101,6 +101,7 @@ body {
 
     /* Appearance */
     border: 2px solid #F7FFF7;
+    border-radius: 6px;
 
     /* Positioning */
     margin-top: 8px;
