@@ -163,9 +163,9 @@ document.addEventListener("DOMContentLoaded", () => {
             click.play();
 
             if (game.userScore === winningScore)
-                winner.textContent = "You have won the game!";
+                winner.textContent = "You have won the game";
             else if (game.computerScore === winningScore)
-                winner.textContent = "Computer has won the game!";
+                winner.textContent = "Computer has won the game";
         })
     })
 })
