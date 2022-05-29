@@ -108,9 +108,9 @@ body {
 
     /* Dimensions */
     width: 416px;
+    padding: 16px;
 }
 
 .description {
     margin: 0;
-    padding: 0;
 }
