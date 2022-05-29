@@ -109,3 +109,8 @@ body {
     /* Dimensions */
     width: 416px;
 }
+
+.description {
+    margin: 0;
+    padding: 0;
+}
