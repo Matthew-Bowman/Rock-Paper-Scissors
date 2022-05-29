@@ -157,6 +157,9 @@ document.addEventListener("DOMContentLoaded", () => {
             game.Play(option.id);
             UpdateScore(game);
             
+            click.pause();
+            click.currentTime = 0;
+            click.volume = 0.25
             click.play();
 
             if (game.userScore === winningScore)
