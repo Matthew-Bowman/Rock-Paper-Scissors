@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initialisation
     const game = new Game();
     const options = document.querySelectorAll(".option");
-    const winner = document.querySelector(".message-container .winner .description")
+    const winner = document.querySelector(".message-container .message .description")
 
     const clickPath = `./Assets/Sounds/Click.wav`;
     const click = new Audio(clickPath);
