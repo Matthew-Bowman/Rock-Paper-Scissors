@@ -129,6 +129,7 @@ class Game {
     // Method: Outputs the results in a formatted way
     OutputResults = function (pResults) {
         // Variable Initialisation
+        const description = document.querySelector(`.description`)
         let results = pResults;
         // Output Results
         console.log(`---------------------------`);
