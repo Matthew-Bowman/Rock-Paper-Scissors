@@ -146,6 +146,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const options = document.querySelectorAll(".option");
     const winner = document.querySelector(".results .winner .description")
 
+    const clickPath = `./Assets/Sounds/Click.wav`;
+    const click = new Audio(clickPath);
+
     // Event Listeners
     // Event Listener: Checks for one of the three buttons being clicked
     //                 and plays a game if true & updates score
@@ -153,6 +156,8 @@ document.addEventListener("DOMContentLoaded", () => {
         option.addEventListener("click", () => {
             game.Play(option.id);
             UpdateScore(game);
+            
+            click.play();
 
             if (game.userScore === winningScore)
                 winner.textContent = "You have won the game!";
