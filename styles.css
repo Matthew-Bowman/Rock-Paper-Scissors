@@ -24,6 +24,7 @@ body {
 .option-container {
     /* Flexbox */
     display: flex;
+    flex-wrap: wrap;
 
     /* Positioning */
     gap: 16px;
