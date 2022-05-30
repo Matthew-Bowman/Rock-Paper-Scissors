@@ -116,6 +116,7 @@ body {
 
     /* Dimensions */
     width: 100%;
+    max-width: 416px;
     padding: 16px;
 }
 
