@@ -25,6 +25,7 @@ body {
     /* Flexbox */
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     /* Positioning */
     gap: 16px;
