@@ -64,6 +64,7 @@ body {
     /* Flexbox */
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
     /* Positioning */
     gap: 8px;
