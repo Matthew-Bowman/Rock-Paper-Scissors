@@ -166,9 +166,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const clickPath = `./Assets/Sounds/Click.wav`;
     const click = new Audio(clickPath);
 
-    const scrollPath = `./Assets/Sounds/Scroll.mp3`;
-    const scroll = new Audio(scrollPath);
-
     // Event Listeners
     // Event Listener: Checks for one of the three buttons being clicked
     //                 and plays a game if true & updates score
