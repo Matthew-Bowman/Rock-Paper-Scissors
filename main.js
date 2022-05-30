@@ -162,8 +162,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const options = document.querySelectorAll(".option");
     const winner = document.querySelector(".message-container .message .description")
 
+    // Audios
     const clickPath = `./Assets/Sounds/Click.wav`;
     const click = new Audio(clickPath);
+
+    const scrollPath = `./Assets/Sounds/Scroll.mp3`;
+    const scroll = new Audio(scrollPath);
 
     // Event Listeners
     // Event Listener: Checks for one of the three buttons being clicked
