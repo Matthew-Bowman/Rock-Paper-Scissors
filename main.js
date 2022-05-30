@@ -165,6 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Audios
     const clickPath = `./Assets/Sounds/Click.wav`;
     const click = new Audio(clickPath);
+    click.volume = 0.25;
 
     // Event Listeners
     // Event Listener: Checks for one of the three buttons being clicked
@@ -176,7 +177,6 @@ document.addEventListener("DOMContentLoaded", () => {
             
             click.pause();
             click.currentTime = 0;
-            click.volume = 0.25;
             click.play();
 
             if (game.userScore === winningScore)
