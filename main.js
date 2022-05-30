@@ -183,13 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 winner.textContent = "You have won the game";
             else if (game.computerScore === winningScore)
                 winner.textContent = "Computer has won the game";
-        })
-
-        option.addEventListener("mouseenter", e => {
-            click.pause();
-            click.currentTime = 0;
-            click.play();
-        })
+        });
     })
 })
 
