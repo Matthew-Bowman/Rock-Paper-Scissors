@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
             click.pause();
             click.currentTime = 0;
-            click.volume = 0.25
+            click.volume = 0.25;
             click.play();
 
             if (game.userScore === winningScore)
@@ -189,7 +189,9 @@ document.addEventListener("DOMContentLoaded", () => {
         })
 
         option.addEventListener("mouseenter", e => {
-            
+            click.pause();
+            click.currentTime = 0;
+            click.play();
         })
     })
 })
