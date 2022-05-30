@@ -40,6 +40,11 @@
             <p class="description">Select one of the options to begin</p>
         </div>
     </div>
+
+    <script>
+        if ('serviceWorker' in navigator)
+            navigator.serviceWorker.register(`./service-worker.js`);
+    </script>
 </body>
 
 </html>
