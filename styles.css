@@ -41,6 +41,8 @@ body {
     flex: 1 1 0px;
 
     /* Positioning */
+    min-width: 128px;
+    max-width: 128px;
     aspect-ratio: 1;
     font-size: 64px;
 
