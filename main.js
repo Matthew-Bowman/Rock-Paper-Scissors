@@ -162,11 +162,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const options = document.querySelectorAll(".option");
     const winner = document.querySelector(".message-container .message .description")
 
-    // Audios
-    const clickPath = `./Assets/Sounds/Click.wav`;
-    const click = new Audio(clickPath);
-    click.volume = 0.25;
-
     // Event Listeners
     // Event Listener: Checks for one of the three buttons being clicked
     //                 and plays a game if true & updates score
@@ -175,11 +170,6 @@ document.addEventListener("DOMContentLoaded", () => {
             // Play Game
             game.Play(option.id);
             UpdateScore(game);
-            
-            // Play sound effect
-            click.pause();
-            click.currentTime = 0;
-            click.play();
 
             // Check winner
             if (game.userScore === winningScore)
