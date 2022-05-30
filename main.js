@@ -172,13 +172,16 @@ document.addEventListener("DOMContentLoaded", () => {
     //                 and plays a game if true & updates score
     options.forEach(option => {
         option.addEventListener("click", () => {
+            // Play Game
             game.Play(option.id);
             UpdateScore(game);
             
+            // Play sound effect
             click.pause();
             click.currentTime = 0;
             click.play();
 
+            // Check winner
             if (game.userScore === winningScore)
                 winner.textContent = "You have won the game";
             else if (game.computerScore === winningScore)
