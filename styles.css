@@ -116,3 +116,7 @@ body {
     /* Positioning */
     margin: 0;
 }
+
+@media only screen and (max-width: 500px) {
+    
+}
