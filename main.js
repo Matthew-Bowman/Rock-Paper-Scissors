@@ -160,8 +160,11 @@ class Game {
             rock: 'hand-back-fist',
             paper: 'hand',
             scissors: 'hand-scissors',
-        }
+        };
 
+        // Turn choices into icons
+        let userChoice = `<i class="fa-solid fa-${choices[results.user]}"></i>`;
+        let computerChoice = `<i class="fa-solid fa-${choices[results.computer]}"></i>`;
     }
 }
 
