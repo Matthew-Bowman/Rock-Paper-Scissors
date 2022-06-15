@@ -169,6 +169,10 @@ class Game {
         // Turn choices into icons
         let userChoice = `<i class="fa-solid fa-${choices[results.user]}"></i>`;
         let computerChoice = `<i class="fa-solid fa-${choices[results.computer]}"></i>`;
+
+        // Add choices to containers
+        userChoiceContainer.innerHTML = userChoice;
+        computerChoiceContainer.innerHTML = computerChoice;
     }
 }
 
