@@ -153,6 +153,12 @@ class Game {
                 break;
         }
         description.textContent = message // Set description to set string
+
+        // Write choice results to scorecard
+        // Variable Initialisation
+        let rockChoice = "hand-back-fist";
+        let paperChoice = "hand";
+        let scissorsChoice = "hand-scissors";
     }
 }
 
