@@ -156,9 +156,12 @@ class Game {
 
         // Write choice results to scorecard
         // Variable Initialisation
-        let rockChoice = "hand-back-fist";
-        let paperChoice = "hand";
-        let scissorsChoice = "hand-scissors";
+        let choices = {
+            rock: 'hand-back-fist',
+            paper: 'hand',
+            scissors: 'hand-scissors',
+        }
+
     }
 }
 
