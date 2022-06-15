@@ -162,6 +162,10 @@ class Game {
             scissors: 'hand-scissors',
         };
 
+        // Choice containers
+        let userChoiceContainer = document.querySelector("#user-choice");
+        let computerChoiceContainer = document.querySelector("#computer-choice");
+
         // Turn choices into icons
         let userChoice = `<i class="fa-solid fa-${choices[results.user]}"></i>`;
         let computerChoice = `<i class="fa-solid fa-${choices[results.computer]}"></i>`;
