@@ -128,3 +128,21 @@ body {
     /* Positioning */
     margin: 0;
 }
+
+.overlay-container {
+    /* Dimensions */
+    width: 100%;
+    height: 100%;
+
+    /* Display */
+    position: fixed;
+
+    /* Appearance */
+    background: #0003;
+
+    /* Positioning */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
