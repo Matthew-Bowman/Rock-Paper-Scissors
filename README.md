@@ -2,5 +2,5 @@
 A classic game of rock paper scissors re-created on a webpage.
 
 > To-Do
-- Add winner popup
-- Add restart option
+- Add winner popup (Started)
+- Add restart option (Started - complete functionality & style)
