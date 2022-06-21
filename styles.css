@@ -145,6 +145,11 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
+
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .winner-popup {
