@@ -148,7 +148,7 @@ body {
     right: 0;
 
     /* Flexbox */
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
 }
