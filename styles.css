@@ -155,4 +155,9 @@ body {
 .winner-popup {
     /* Dimensions */
     width: fit-content;
+
+    /* Appearance */
+    background: #363636;
+    border-radius: 6px;
+    padding: 16px 32px;
 }
